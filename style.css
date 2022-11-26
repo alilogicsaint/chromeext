@@ -3,12 +3,13 @@ body{
     height: 500px;
     margin: 0px ;
     transition: .5s;
+    background-color: antiquewhite;
 }
 
-
+.dflex{
+    display: flex;
+}
 .container{
-    background-color: antiquewhite;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -36,11 +37,63 @@ body{
     margin: 0px;
 }
 
-button#btn {
+button.btn {
     width: 79px;
     margin: 0px;
     padding: 8px;
     border: 0px;
     background: aquamarine;
 }
+.listContainer {
+    width: 100%;
+}
+ul.lists {
+      
+       padding: 0px 0px;
+       display: flex;
+       flex-direction: column;
+}
+.listli {
+    width: 100%;
+    padding: 8px 8px;
+    background: aliceblue;
+    font-size: 14px;
+    margin: 1px 0px;
+}
+p.li_text {
+    margin: 0px;
+}
 
+
+p.li_text {
+    width:80%;
+    overflow-y: overlay;
+  }
+  
+  p.li_text::-webkit-scrollbar {
+    width: 16px;
+  }
+  p.li_text::-webkit-scrollbar-thumb {
+    background-color: #0080ff;
+    border: 7px solid #fff;
+    border-radius: 10rem;
+    width: 5px;
+  }
+  p.li_text::-webkit-scrollbar-track {
+    position: absolute;
+    right: -3rem;
+    top: -50rem;
+    background: transparent;
+  }
+
+input[type="checkbox"] {
+    margin: 1px 4px 0px 0px;
+}
+
+.fa-trash-o{
+    color: rgb(246, 97, 97);
+}
+
+.fa-pencil-square-o{
+    color: #009688;
+}
